@@ -1,0 +1,185 @@
+    @media(max-width: 750px) {
+        body {
+            width: 100%;
+        }
+
+        /* display grid */
+        #mainstore {
+            grid-gap: 12px;
+            height: 170vh;
+            display: grid;
+            grid-template-columns: 75%;
+            grid-template-rows: 20% 20% 5% 40% 40% 40% 40% 20% 50%;
+            grid-column-start: auto;
+            grid-template-areas:
+                'h h h'
+                'store store store'
+                ' ar ar ar'
+                ' ar ar ar'
+                ' ar ar ar'
+                ' ar ar ar'
+                'f f f'
+                'f f f'
+                'f f f'
+            ;
+        }
+
+        /*Header in all pages*/
+        #myVideo {
+            min-width: 100%;
+            min-height: 100%;
+            margin-top: 97%;
+        }
+
+        .responsive-logo {
+            display: block;
+            width: 178%;
+        }
+
+        .logo {
+            display: none;
+        }
+
+        #responsive-icon {
+            display: flex;
+            margin-left: 480%;
+            width: 57%;
+            position: absolute;
+            top: 18%;
+        }
+
+        header:hover a {
+            display: block;
+            align-items: center;
+        }
+
+        .dropdown {
+            display: none;
+        }
+
+        .a {
+            display: none;
+            color: black;
+            background-color: white;
+            font-size: 80px;
+            margin: -1.5%;
+            border-bottom: 42px solid black;
+
+        }
+        #join {
+            display: none;
+        }
+        /* menu home page */
+        #navhome {
+
+            display: flex;
+            width: 565%;
+            height: 0%;
+            justify-content: start;
+            flex-direction: column;
+            background-color: white;
+            position: absolute;
+            left: 0%;
+            top: 86%
+        }
+
+        /* manu store */
+        #storesimag-responsive {
+            display: flex;
+            width: 314%;
+            position: absolute;
+            margin-top: 87%;
+        }
+
+        #navstore-and-food {
+            display: flex;
+            width: 565%;
+            height: 0%;
+            justify-content: start;
+            flex-direction: column;
+            background-color: white;
+            position: absolute;
+            left: 0%;
+            z-index: 1;
+            top: 86%
+        }
+
+        #storesimag {
+            display: none;
+        }
+
+
+        .imgstore {
+            width: 865px;
+            height: 718px;
+        }
+
+        #store {
+            display: flex;
+            flex-direction: column;
+            left: 13%;
+        }
+
+        /* table */
+        #table {
+            width: 100%;
+        }
+
+        aside {
+            display: none;
+        }
+
+        hr {
+            display: flex;
+        }
+        /* footer homepage*/
+        .footerTitle {
+            margin-bottom: 0px;
+            margin-left: 15px;
+        }
+
+        .footer-Top {
+            background-color: #20262a;
+            width: 309%;
+            margin-top: -38%;
+        }
+
+        .footerTitle {
+            font-size: 65px;
+            padding-top: 50px;
+            margin-left: 6%;
+        }
+
+        .footericon {
+            width: 10%;
+            margin-top: 6%;
+        }
+
+        .footer-div-icon {
+            margin-left: 11%;
+        }
+
+        .footer-top-p {
+            font-size: 40px;
+        }
+
+        .footer-bottom-p {
+            display: none;
+        }
+
+        /* footer store and food*/
+        .footerTitle-store {
+            margin-bottom: 0px;
+            margin-left: 15px;
+            font-size: 65px;
+            margin-left: 6%;
+        }
+
+        .footer-Top-store {
+            background-color: #20262a;
+            width: 314%;
+            margin-top: 10100px;
+            position: absolute;
+        }
+
+    }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גלריה</title>
+    <link rel="icon" href="image/icon dicity.png" type="image/png">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+        <a href="homepage.html"><img class="fixed-link" src="image/icon home.png"></a>
+    <div class="container">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="image/jerusalem (2).jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="image/di.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="image/down.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="image/street.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="image/dic.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="image/fgh.jpeg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="image/jerusalem (2).jpg" style="width:100%" onclick="currentSlide(1)"
+                    alt="Gallery">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/di.jpg" style="width:100%" onclick="currentSlide(2)" alt="Gallery">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/down.jpg" style="width:100%" onclick="currentSlide(3)"
+                    alt="Gallery">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/street.jpg" style="width:100%" onclick="currentSlide(4)"
+                    alt="Gallery">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/dic.jpeg" style="width:100%" onclick="currentSlide(5)"
+                    alt="Gallery">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/fgh.jpeg" style="width:100%" onclick="currentSlide(6)"
+                    alt="Gallery">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <div id="information">
+        <p>
+            DCITY הוא ללא ספק מהפכה עבור תושבי ירושלים רבתי בכל הקשור לעיצוב הבית. אם עד היום נאלצו הירושלמים (וכל תושבי
+            הישובים סביבה) להסתפק בחנויות המפוזרות כל אחת במקום אחר או לחילופין לנסוע עד תל אביב וגוש דן על מנת להגיע
+            למתחמי קניות לעיצוב הבית, היום הגלגל התהפך: כאשר החלטנו על היציאה לדרך עם פרויקט הענק עם DCITY חשבנו על כך
+            שכעת הירושלמים יקבלו את כל הקשור לעיצוב הבית וגם הרבה יותר מכך קרוב לבית. בנוסף, המתחם ימשוך גם את תושבי
+            המרכז ובהדרגה גם לקוחות מכל רחבי הארץ ואף מחו”ל שירצו לראות וגם לערוך קניות במתחם הקניות לעיצוב הבית הגדול
+            במזרח התיכון!
+        </p>
+        <h3>מישור ומעלה אדומים- אזור אידיאלי למגורים וגם למסחר ותעשיה</h3>
+        <p>
+            איך היום נמצא פתאום המקום בו ניתן להקים מתחם קניות עצום כמו DCITY באזור ירושלים? בעוד שבירושלים יותר ויותר
+            שטחים מוקצים לטובת מגורים על חשבון אזורי מסחר ותעשיה, נמצא הפתרון באזור הנרחב של מישור אדומים הנמצא במרחק של
+            כמה דקות נסיעה מירושלים בזכות תנאי תעבורה מצוינים ומערכת כבישים ומחלפים חדשה. המתחם כולו משתרע על פני שטח של
+            כ- 100,000 מ”ר, מתוכם כ- 60,000 מ”ר שטחי השכרה לעסקים הפרושים כולם על פני קומה אחת, כשבין מגוון האדיר של כ-
+            200 חנויות הריהוט ועיצוב הבית ישנו גם מתחם יפהפה המיועד כולו למסעדות, הפיאצה, הבנוי בהשראת מלון ונציה
+            המפורסם בלאס וגאס, כך שבין מנה ראשונה לעיקרית או קינוח תוכלו לצפות במיני גונדולות אשר שטות באגם ולהרים מבט
+            לשמים
+            (תקרת השמים המלאכותית הגדולה במזרח התיכון) שמעליכם.
+        </p>
+        <h3>DCITY – מיטב החנויות לעיצוב הבית מהארץ ומחו”ל</h3>
+        <p>
+            מתחם DCITY מהווה בית למגוון רחב של רשתות וחנויות לעיצוב הבית המוכרות לכולנו בגלל פרישתן הארצית כמו מחסני
+            חשמל, דלתות פנדור, שקם אלקטריק, צמר שטיחים, אורבן, ד”ר גב ועוד רבות, אך מהווה גם מרכז קליטה לחנויות שDCITY
+            הוא מקום שמשך את תשומת ליבן ושכנע אותן ששווה לעבור לגור בישראל (או לפחות לשלוח נציג…). עם חנויות אלה נמנית
+            חנות הענק לכל הקשור לציוד למטבח Ekiphan, חנות שעליה מתבססים באופן יומיומי וקבוע המלונות הרבים שבאנטליה והיא
+            משרתת כבר כשלושים שנה את כולם בהצלחה רבה. מאיירס טפטים אמנם כבר שלחה נציגים בודדים לארץ אך נציג גדול ובולט
+            של החברה יהיה בDCITY. כך גם חברת מוצרי החשמל היוקרתיים Miele הגרמנית וזה רק על קצה המזלג. המתחם יכלול חנויות
+            למוצרי חשמל, קרמיקה, דלתות, ארונות, טקסטיל. אזור המסעדות יכלול מסעדות, מאפיות וקונדיטוריות ברמות שונות, כולל
+            מסעדות יוקרה.
+        </p>
+        <h3>המושג “חוויית קניות” מקבל משמעות חדשה</h3>
+        <p>
+            אצלנו בDCITY החזון הוא לתת ללקוחות חוויית קניות חדשה במלוא מובן המילה. החלטנו להשקיע סכומי עתק על מנת ליצור
+            סמוך לבירת ישראל את בירת מתחמי הקניות לעיצוב הבית. מבחינתנו זהו תיקון למצב אבסורדי ממש שדווקא בבירת ישראל
+            וסביבתה אין מתחם קניות אחד שכל כולו עיצוב הבית. לכן, ההחלטה היתה ללכת עד הסוף וליצור משהו חדש ברמות שאין
+            כמותן בארץ ורק בודדות בעולם. חוויית הקניות אצלנו כוללת גם את מבחר החנויות האדיר והאיכותי, גם את מתחם האוכל
+            המקסים, אטרקציות לילדים ושלל הפתעות שיהפכו את הקניה לחוויה.
+        </p>
+        <h3>DCITY: רווח נקי לכולם</h3>
+        <p>
+            מDCITY כולם מרוויחים: לקוחות פרטיים שבאים לעצב את ביתם והופכים את הקניות לבילוי לכל המשפחה, בעלי העסקים
+            שזוכים לעלות השכרה נמוכה יחסית, בוודאי בהשוואה לגוש דן אך גם בהשוואה למרכזי ערים גדולות אחרות, אדריכלים
+            ומעצבים שמוצאים במקום את כל מה שחלמו. בנוסף, DCITY יספק תעסוקה לאלפי עובדים מהאזור. לצד DCITY מתוכנן להיות
+            מוקם גם מלון מפואר אותו יעצב האדריכל דניאל חסון ומתחם ענק לאירועים. אין ספק שהקמת DCITY תביא לפיתוח
+            והתרוממות אדירה של האזור כולו וזאת מבלי להפוך אותו לאזור צפוף ותוך שמירה על הסביבה ועל המרחבים של מישור
+            אדומים.
+        </p>
+    </div>
+</body>
+
+</html>

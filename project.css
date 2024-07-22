@@ -1,0 +1,402 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* background home page */
+#myVideo {
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#responsive-icon {
+    display: none;
+}
+
+/* header to food,store,homepage */
+
+header {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    grid-area: h;
+}
+
+.logo {
+    width: 97%;
+}
+
+.responsive-logo {
+    display: none;
+}
+
+/* menu home */
+#navhome {
+    height: 50%;
+    position: absolute;
+    text-align: center;
+    width: 99%;
+    top: 100%;
+    grid-area: nav;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    padding: 7px;
+    direction: rtl;
+}
+
+/* menu store and food */
+#navstore-and-food {
+    height: 55%;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    width: 99%;
+    grid-area: nav;
+    bottom: 0;
+    background-color: #242424ea;
+    direction: rtl;
+    padding: 7px;
+}
+
+/* links to store,food,homepage */
+.a {
+    margin-top: 1.1%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    top: -53%;
+    font-weight: 300;
+    bottom: 0;
+    color: #f1f1f1;
+    padding: 21px;
+}
+/* dropdown menu */
+.dropbtn {
+    /* background-color: #04AA6D; */
+    color: white;
+    padding: 16px;
+    /* font-size: 16px; */
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 1.1%;
+    text-decoration: none;
+    font-size: 1.2em;
+    top: -53%;
+    font-weight: 300;
+    bottom: 0;
+    color: #f1f1f1;
+    padding: 21px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #383737;
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 17%;
+    right: 5%;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    border-bottom: 3px solid white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-home {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    ;
+}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+/* club in store,food,homepage */
+#join {
+    background-color: #ec1b22e2;
+    float: left;
+    margin-top: 5px;
+    position: relative;
+    width: 12%;
+    height: 73%;
+}
+
+.a-join {
+    margin-top: 1.1%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    top: -53%;
+    font-weight: 300;
+    bottom: 0;
+    color: #f1f1f1;
+    padding: 21px;
+}
+
+#join:hover {
+    background-color: white;
+}
+
+#join a:hover {
+    color: black;
+
+}
+
+/* nav:hover to allpages */
+nav .a:hover {
+    border-bottom: 3px solid white;
+}
+
+hr {
+    display: none;
+}
+
+/* images to store and food */
+#storesimag {
+    grid-area: store;
+    width: 100%;
+    position: absolute;
+    margin-top: 169px;
+}
+
+.store {
+
+    margin: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: block;
+    position: relative;
+}
+
+.imgstore {
+    height: 180px;
+    width: 230px;
+    border: solid rgba(131, 128, 128, 0.3) 1px;
+    filter: grayscale(100%);
+}
+
+#storesimag-responsive {
+    display: none;
+}
+
+.imgstore:hover {
+    filter: grayscale(0%);
+}
+
+/* aside to store and food */
+aside {
+    grid-area: as;
+}
+
+/* search */
+input,
+label {
+    margin: 9PX;
+}
+.sear{
+    margin: 20px;
+}
+.list {
+    position: absolute;
+    direction: rtl;
+}
+
+.search{
+    border-radius: 20px;
+    margin:  40px;
+}
+#search {
+    height: 16px;
+    width: 177px;
+    font-family: 'Segoe UI';
+    text-align: right;
+    border: solid white 0px;
+    outline: none;
+}
+
+#glass {
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.search {
+    border: solid rgba(131, 128, 128, 0.3) 2px;
+    height: 20%;
+    width: 108%;
+    margin-top: 17px;
+    margin-right: 9px;
+}
+
+.search-of-responsive {
+    display: none;
+}
+
+/* article in all pages */
+article {
+    display: grid;
+    margin: 105px;
+    grid-auto-rows: 184px;
+    grid-area: ar;
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-top: 0%;
+}
+
+th,
+td {
+    text-align: right;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* reapit to home page */
+.fixed-link {
+    position: sticky;
+    top: 3%;
+    left: 95%;
+    width: 3%;
+}
+
+
+/* footer homepage */
+.footer-Top {
+    background-color: #20262a;
+    margin-top: -4%;
+}
+
+.footerTitle {
+    font-size: 23px;
+    color: white;
+    padding-top: 50px;
+    margin-left: 6%;
+}
+
+.footericon {
+    width: 3%;
+}
+
+.footer-div-icon {
+    margin-left: 7.5%;
+}
+
+.footer-top-p {
+    text-align: center;
+    color: white;
+    background-color: #b1acad9f;
+    direction: rtl;
+}
+
+.footer-bottom-p {
+    color: white;
+    position: sticky;
+    float: right;
+    margin-right: 2%;
+}
+
+/* footer store and food */
+.footer-Top-store {
+    background-color: #20262a;
+    margin-top: 75%;
+    position: absolute;
+    width: 100%;
+}
+
+.footerTitle-store {
+    font-size: 23px;
+    color: white;
+    margin-left: 6%;
+}
+
+hr {
+    display: none;
+}
+
+/* display grid */
+#mainstore {
+
+    grid-gap: 12px;
+    height: 160vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-auto-rows: 100px 1fr 1fr 4fr 80px;
+    grid-template-areas:
+        'h h h'
+        'nav nav nav'
+        'store store store'
+        'store store store'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'ar ar as'
+        'f f f'
+
+    ;
+}
+#hellow{
+    height:80vh;
+    width: 60vw;
+    background-color: #20262a;
+    display: flex; 
+    margin-top: 10vh;
+    margin-left: 40vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    font-size: large;
+    border-radius: 35px;
+    position: absolute;
+    z-index: 4;
+}
+#img{
+    margin: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    position: relative;
+    margin-top: 5px;
+}
+.imgh{
+    width: 150px;
+    height: 150px;
+    margin:5px;
+    border-radius: 5px;
+}
+
+
